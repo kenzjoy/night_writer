@@ -1,22 +1,20 @@
-class NightWriter
-  attr_reader :input, 
-              :output
+# require 'new files'
+  
+reader_file = File.open(ARGV[0], "r")
+incoming_text = reader_file.read
+reader_file.close
 
-  def initialize(input, output)
-    @input = input
-    @output = output
-  end
-end
+# variable = value
+# writer_file = File.open(ARGV[1], "w")
+# writer_file.write(variable)
+# writer_file.close
 
-# reader = File.open(ARGV[0], "r")
-# incoming_text = reader.read
-# reader.close
+# capitalize test
+# ruby ./lib/night_writer.rb message.txt capitalize.txt
+capitalize_text = incoming_text.upcase
+capitalize = File.open(ARGV[1], "w")
+capitalize.write(capitalize_text)
+capitalize.close
 
-# capitalize_text = incoming_text.upcase
-# writer = File.open(ARGV[1], "w")
-# writer.write(capitalize_text)
-# writer.close
-
-# puts capitalize_text
-
-# puts "Created '#{ARGV[1]}' containing #{capitalize_text.length} characters"
+puts capitalize_text
+puts "Created '#{ARGV[1]}' containing #{capitalize_text.length} characters"
