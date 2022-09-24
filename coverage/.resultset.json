@@ -1,33 +1,14 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/mackenzieleng/Desktop/turing_work/1mod/projects/night_writer/lib/night_writer.rb": {
+      "/Users/mackenzieleng/Desktop/turing_work/1mod/projects/night_writer/lib/dictionary.rb": {
         "lines": [
           1,
-          1,
-          null,
-          null,
-          1,
-          2,
-          2,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
           null,
           null
         ]
       }
     },
-    "timestamp": 1663987412
+    "timestamp": 1663999114
   }
 }
