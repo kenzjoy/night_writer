@@ -8,14 +8,21 @@
           null,
           1,
           null,
-          3,
+          0,
           null,
           null,
           null,
           null
         ]
+      },
+      "/Users/mackenzieleng/Desktop/turing_work/1mod/projects/night_writer/lib/translator.rb": {
+        "lines": [
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1664000777
+    "timestamp": 1664004242
   }
 }
