@@ -14,11 +14,9 @@ RSpec.describe NightWriter do
       expect(@writer.output).to eq('braille.txt')
     end
 
-  # describe '#message' do
-  #   it 'can return a dynamic message' do
-  #     @writer.message
-
-  #     expect(@writer.message).to eq("Created #{ARGV[1]} containing #{capitalize_text.length} characters")
-  #   end
-  # end
+  describe '#message' do
+    it 'can return a dynamic message' do
+      expect(@writer.message).to eq("Created #{ARGV[1]} containing #{capitalize_text.length} characters")
+    end
+  end
 end
