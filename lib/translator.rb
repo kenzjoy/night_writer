@@ -8,11 +8,10 @@ class Translator
   def alpha_to_braille(string)
     translated = []
     dictionary.alpha.each do |key, value|
-      require 'pry'; binding.pry
       if string == key
         translated << value 
       end
     end
-    translated
+    translated.shift
   end
 end
