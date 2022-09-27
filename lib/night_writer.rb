@@ -1,20 +1,18 @@
-# require 'new files'
+require './lib/dictionary'
+require './lib/translator'
   
+translator = Translator.new
+
 reader_file = File.open(ARGV[0], "r")
 incoming_text = reader_file.read
 reader_file.close
 
-# variable = value
-# writer_file = File.open(ARGV[1], "w")
-# writer_file.write(variable)
-# writer_file.close
+braille = translator.translated(incoming_text)
 
-# capitalize test
-# ruby ./lib/night_writer.rb message.txt capitalize.txt
-capitalize_text = incoming_text.upcase
-capitalize = File.open(ARGV[1], "w")
-capitalize.write(capitalize_text)
-capitalize.close
+writer_file = File.open(ARGV[1], "w")
+writer_file.write(braille)
+writer_file.close
 
-puts capitalize_text
-puts "Created '#{ARGV[1]}' containing #{capitalize_text.length} characters"
+puts "Created '#{ARGV[1]}' containing #{incoming_text.length} characters"
+
+# ruby ./lib/night_writer.rb message.txt braille.txt
