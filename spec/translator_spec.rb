@@ -45,4 +45,13 @@ RSpec.describe Translator do
       expect(@translator.braille_to_alpha("00..00")).to eq('x')
     end
   end
+
+  describe '#untranslated' do
+    it 'converts multiple braille chars into multiple alpha chars' do
+      expect(@translator.untranslated("0.\n..\n..")).to eq('a')
+      expect(@translator.untranslated("0...0...0...0.\n0....0..0....0\n0...0...00....")).to eq('l o v e')
+      expect(@translator.untranslated("00.00.0.\n000.0..0\n....00..")).to eq('give')  
+      expect(@translator.untranslated("00.00.0...000...0...0.0.0.0.0.\n000.0..0.....0......0.00.0....\n....00....0...........0.....0.")).to eq('give me a break')  
+    end
+  end
 end

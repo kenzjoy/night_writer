@@ -31,4 +31,6 @@ class Translator
   def braille_to_alpha(braille_char)
     dictionary.braille[braille_char]
   end
+
+  
 end
