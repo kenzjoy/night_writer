@@ -1,5 +1,6 @@
 class Dictionary 
-  attr_reader :alpha 
+  attr_reader :alpha, 
+              :braille
 
   def initialize
     @alpha = {
@@ -29,7 +30,8 @@ class Dictionary
               'x' => '00..00',
               'y' => '00.000',
               'z' => '0..000',
-              ' '  => '......' 
+              ' ' => '......' 
             }
+    @braille = alpha.invert
   end
 end
