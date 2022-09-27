@@ -21,14 +21,15 @@ RSpec.describe Translator do
     end
   end
 
-  describe '#stacked_braille' do
-    it 'properly stacks braille letters from 1x6 to 3x2' do
-      expect(@translator.stacked_braille('a')).to eq("0.\n..\n..")
-    end
-  end
+  # describe '#stacked_braille' do
+  #   it 'properly stacks braille letters from 1x6 to 3x2' do
+  #     expect(@translator.stacked_braille('a')).to eq("0.\n..\n..")
+  #   end
+  # end
 
   describe '#translated' do
     it 'translates multiple characters/words from english to braille' do
+      expect(@translator.translated('a')).to eq("0.\n..\n..")
       expect(@translator.translated('give')).to eq("00.00.0.\n000.0..0\n....00..")  
       expect(@translator.translated('give me a break')).to eq("00.00.0...000...0...0.0.0.0.0.\n000.0..0.....0......0.00.0....\n....00....0...........0.....0.")  
     end
