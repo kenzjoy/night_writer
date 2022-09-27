@@ -11,6 +11,7 @@ RSpec.describe Dictionary do
 
     it 'has attributes' do
       expect(@dictionary.alpha).to be_a(Hash)
+      expect(@dictionary.braille).to be_a(Hash)
     end
 
   describe '#alpha' do
