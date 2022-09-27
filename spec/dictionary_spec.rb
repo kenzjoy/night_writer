@@ -21,4 +21,10 @@ RSpec.describe Dictionary do
       expect(@dictionary.alpha[' ']).to eq('......')
     end
   end
+
+  describe '#braille' do 
+    it 'can invert the alpha dictionary to make the braille letters the keys and the alpha chars the values' do
+      expect(@dictionary.braille['0.....']).to eq('a')
+    end
+  end
 end
