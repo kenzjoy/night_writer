@@ -29,7 +29,7 @@ RSpec.describe Translator do
 
   describe '#translated' do
     it 'translates multiple characters/words from english to braille' do
-      expect(@translator.translated(incoming_text)).to eq()
+      expect(@translator.translated('give')).to eq("00.00.0.\n000.0..0\n....00..\n")  
     end
   end
 end
