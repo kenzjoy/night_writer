@@ -14,4 +14,15 @@ class Translator
     end
     translated.shift
   end
+
+  # def stacked_braille(string)
+  #   stack_1 = ""
+  #   stack_2 = ""
+  #   stack_3 = ""
+  #   string.chars.each do |char|
+  #     alpha[char][0..1]
+
+  #     end
+  #   end
+  # end
 end

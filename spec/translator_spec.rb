@@ -20,4 +20,10 @@ RSpec.describe Translator do
       expect(@translator.alpha_to_braille('b')).to eq('0.0...')
     end
   end
+
+  describe '#stacked_braille' do
+    it 'properly stacks braille letters from 1x6 to 3x2' do
+      expect(@translator.stacked_braille('a')).to eq("0.\n..\n..")
+    end
+  end
 end
