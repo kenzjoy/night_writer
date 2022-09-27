@@ -26,7 +26,5 @@ class Translator
       incoming_text[0..79].join("\n")
     end
       # require 'pry'; binding.pry
-      
-  
   end
 end
