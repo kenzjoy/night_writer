@@ -28,9 +28,14 @@ class Translator
       # require 'pry'; binding.pry
   end
 
-  def braille_to_alpha(braille_char)
-    dictionary.braille[braille_char]
+  def braille_to_alpha(braille_str)
+    dictionary.braille[braille_str]
   end
 
-  
+  def untranslated(braille_str)
+    no_break = braille_str.split("\n")
+    braille_to_alpha(no_break.join)
+  end
+
+
 end
