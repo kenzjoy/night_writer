@@ -41,6 +41,8 @@ RSpec.describe Translator do
   describe '#braille_to_alpha' do 
     it 'can translate a braille char argument to an alpha char' do
       expect(@translator.braille_to_alpha("000...")).to eq('f')
+      expect(@translator.braille_to_alpha("0..00.")).to eq('o')
+      expect(@translator.braille_to_alpha("00..00")).to eq('x')
     end
   end
 end
