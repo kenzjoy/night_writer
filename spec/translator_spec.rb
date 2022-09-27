@@ -29,7 +29,14 @@ RSpec.describe Translator do
 
   describe '#translated' do
     it 'translates multiple characters/words from english to braille' do
-      expect(@translator.translated('give')).to eq("00.00.0.\n000.0..0\n....00..\n")  
+      expect(@translator.translated('give')).to eq("00.00.0.\n000.0..0\n....00..")  
+      expect(@translator.translated('give me a break')).to eq("00.00.0...000...0...0.0.0.0.0.\n000.0..0.....0......0.00.0....\n....00....0...........0.....0.")  
+    end
+  end
+
+  describe '#line_control' do
+    xit 'keeps the translated braille <= 40 chars wide' do 
+
     end
   end
 end
