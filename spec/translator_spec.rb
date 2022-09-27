@@ -26,4 +26,10 @@ RSpec.describe Translator do
       expect(@translator.stacked_braille('a')).to eq("0.\n..\n..")
     end
   end
+
+  describe '#translated' do
+    it 'translates multiple characters/words from english to braille' do
+      expect(@translator.translated(incoming_text)).to eq()
+    end
+  end
 end

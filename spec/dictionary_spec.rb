@@ -17,6 +17,7 @@ RSpec.describe Dictionary do
     it 'can look up an English letter and find its Braille equivalent' do
       expect(@dictionary.alpha['a']).to eq('0.....')
       expect(@dictionary.alpha['b']).to eq('0.0...')
+      expect(@dictionary.alpha[' ']).to eq('......')
     end
   end
 end
