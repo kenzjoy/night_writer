@@ -22,6 +22,11 @@ class Translator
   end
 
   def line_control(incoming_text)
-    
+    if incoming_text.length > 80
+      incoming_text[0..79].join("\n")
+    end
+      # require 'pry'; binding.pry
+      
+  
   end
 end
