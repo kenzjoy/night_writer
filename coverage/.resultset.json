@@ -8,7 +8,7 @@
           null,
           1,
           null,
-          10,
+          13,
           null,
           null,
           null,
@@ -82,8 +82,47 @@
           null,
           null
         ]
+      },
+      "/Users/mackenzieleng/Desktop/turing_work/1mod/projects/night_writer/spec/translator_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          5,
+          5,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1664257705
+    "timestamp": 1664258908
   }
 }
